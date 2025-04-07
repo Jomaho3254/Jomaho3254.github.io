@@ -15,7 +15,7 @@
 
         /* Body Styling */
         body {
-            background-color: #fcf7f2;
+            background-color: #ffffff; /* White Background */
             color: #4a4a4a;
             line-height: 1.6;
             display: flex;
@@ -28,13 +28,12 @@
         .container {
             max-width: 800px;
             width: 100%;
-            padding: 20px;
-            text-align: center;
+            text-align: center; /* Center Content */
         }
 
         /* Header Section */
         .header {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
 
         .book-icon {
@@ -59,7 +58,7 @@
         /* Image Section */
         .image-container {
             max-width: 300px;
-            margin: 0 auto 40px;
+            margin: 0 auto 30px; /* Center Image */
         }
 
         .image-container img {
@@ -71,26 +70,19 @@
         /* Features Section */
         .features {
             max-width: 450px;
-            margin: 0 auto 40px;
-            text-align: left;
+            margin: 0 auto; /* Center Features */
         }
 
         .feature-item {
-            display: flex;
-            align-items: baseline;
-            margin-bottom: 20px;
-        }
-
-        .feature-item svg {
-            min-width: 20px;
-            margin-right: 10px;
-            color: #b18c6d; /* Icon color */
+            display: block; /* Stack items vertically */
+            font-size: 1.2rem; /* Slightly larger text */
+            margin-bottom: 20px; /* Space between items */
         }
 
         /* Call-to-Action Button */
         .cta-button {
             display: inline-block;
-            background-color: #ff6d33; /* Button color */
+            background-color: #505764; /* Button matches cat's main color */
             color: white; /* Text color */
             font-weight: bold; 
             padding: 15px 40px; 
@@ -104,7 +96,7 @@
 
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(255, 109, 51, 0.3);
+            box-shadow: 0 6px 12px rgba(80, 87, 100, 0.3); /* Slight shadow effect */
         }
     </style>
 </head>
@@ -114,14 +106,6 @@
         
         <!-- Header Section -->
         <div class="header">
-            
-           <!-- Book Icon -->
-           <div class="book-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12,3 C9.33,3 ... Z" fill="currentColor"/>
-                </svg>
-           </div>
-
            <!-- Title -->
            <h1>How to Sell Without Selling</h1>
 
@@ -138,18 +122,9 @@
 
        <!-- Features Section -->
        <div class="features">
-           <div class="feature-item">
-               <svg width="20" height="20" viewBox="0 ... Z" fill="currentColor"></svg>
-               Learn natural selling techniques
-           </div>
-           <div class="feature-item">
-               <svg width="20" height="20" viewBox="0 ... Z" fill="currentColor"></svg>
-               Build lasting customer relationships
-           </div>
-           <div class="feature-item">
-               <svg width="20" height="20" viewBox="0 ... Z" fill="currentColor"></svg>
-               Increase sales without pressure
-           </div>
+           <div class="feature-item">Learn natural selling techniques</div>
+           <div class="feature-item">Build lasting customer relationships</div>
+           <div class="feature-item">Increase sales without pressure</div>
        </div>
 
        <!-- Call-to-Action Button -->
