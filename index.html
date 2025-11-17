@@ -30,37 +30,38 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 30px 60px;
+            padding: clamp(15px, 3vw, 30px) clamp(20px, 5vw, 60px);
             background: #fafafa;
             z-index: 1000;
         }
 
         .nav-left {
             display: flex;
-            gap: 50px;
+            gap: clamp(20px, 4vw, 50px);
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .nav-left h1 {
-            font-size: 20px;
+            font-size: clamp(16px, 2vw, 20px);
             font-weight: 400;
         }
 
         .nav-left p {
-            font-size: 16px;
+            font-size: clamp(12px, 1.5vw, 16px);
             font-weight: 300;
             line-height: 1.4;
         }
 
         .nav-right {
             display: flex;
-            gap: 60px;
+            gap: clamp(20px, 4vw, 60px);
         }
 
         .nav-right a {
             text-decoration: none;
             color: #000;
-            font-size: 18px;
+            font-size: clamp(14px, 1.8vw, 18px);
             font-weight: 400;
             transition: opacity 0.3s;
             cursor: pointer;
@@ -71,12 +72,12 @@
         }
 
         .orange-circle {
-            width: 70px;
-            height: 70px;
+            width: clamp(40px, 7vw, 70px);
+            height: clamp(40px, 7vw, 70px);
             background: #ff8c00;
             border-radius: 50%;
             position: fixed;
-            top: 25px;
+            top: clamp(15px, 2.5vw, 25px);
             left: 50%;
             transform: translateX(-50%);
             z-index: 1001;
@@ -97,7 +98,7 @@
             left: 0;
             display: flex;
             flex-direction: column;
-            padding: 0 60px;
+            padding: 0 clamp(20px, 5vw, 60px);
             opacity: 0;
             transform: translateY(100vh);
             transition: opacity 0.8s cubic-bezier(0.645, 0.045, 0.355, 1), 
@@ -115,21 +116,21 @@
             transform: translateY(-100vh);
         }
 
-        /* Home Section - Centered with 2 lines */
+        /* Home Section */
         #home {
             justify-content: center;
             align-items: flex-start;
-            padding-left: 100px;
+            padding-left: clamp(30px, 8vw, 100px);
         }
 
         #home h2 {
-            font-size: 20px;
+            font-size: clamp(16px, 2vw, 20px);
             font-weight: 300;
-            margin-bottom: 60px;
+            margin-bottom: clamp(30px, 5vw, 60px);
         }
 
         #home h1 {
-            font-size: 80px;
+            font-size: clamp(32px, 8vw, 80px);
             font-weight: 400;
             line-height: 1.15;
             max-width: 100%;
@@ -137,21 +138,21 @@
 
         /* Portfolio Section */
         #portfolio {
-            padding-top: 180px;
-            padding-left: 50px;
+            padding-top: clamp(120px, 18vh, 180px);
+            padding-left: clamp(20px, 4vw, 50px);
         }
 
         #portfolio h1 {
-            font-size: 72px;
+            font-size: clamp(36px, 7vw, 72px);
             font-weight: 400;
-            margin-bottom: 100px;
+            margin-bottom: clamp(40px, 8vw, 100px);
         }
 
         .github-link {
             position: absolute;
-            top: 180px;
-            right: 60px;
-            font-size: 56px;
+            top: clamp(120px, 18vh, 180px);
+            right: clamp(20px, 5vw, 60px);
+            font-size: clamp(28px, 5.5vw, 56px);
             font-weight: 400;
             text-decoration: none;
             color: #000;
@@ -159,18 +160,18 @@
 
         .portfolio-list {
             list-style: none;
-            font-size: 36px;
+            font-size: clamp(18px, 3.5vw, 36px);
             font-weight: 300;
             line-height: 1.8;
         }
 
         .orange-box {
-            width: 310px;
-            height: 50px;
+            width: clamp(150px, 30vw, 310px);
+            height: clamp(30px, 5vw, 50px);
             background: #ff8c00;
             position: absolute;
-            bottom: 120px;
-            right: 60px;
+            bottom: clamp(60px, 12vh, 120px);
+            right: clamp(20px, 5vw, 60px);
         }
 
         /* Contact Section */
@@ -181,28 +182,31 @@
         }
 
         #contact h1 {
-            font-size: 72px;
+            font-size: clamp(36px, 7vw, 72px);
             font-weight: 400;
-            margin-bottom: 100px;
+            margin-bottom: clamp(40px, 8vw, 100px);
             text-align: center;
         }
 
         .contact-box {
             background: #ff8c00;
-            padding: 60px 140px;
+            padding: clamp(20px, 6vw, 60px) clamp(30px, 10vw, 140px);
+            width: 100%;
+            max-width: 800px;
         }
 
         .contact-inner {
             background: #fff;
-            padding: 40px 100px;
+            padding: clamp(20px, 4vw, 40px) clamp(30px, 8vw, 100px);
             display: flex;
-            gap: 100px;
+            gap: clamp(30px, 8vw, 100px);
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         .linkedin-logo {
-            font-size: 56px;
+            font-size: clamp(28px, 5.5vw, 56px);
             color: #000;
             font-weight: 600;
             letter-spacing: -2px;
@@ -212,39 +216,156 @@
             background: #0077b5;
             color: #fff;
             padding: 6px 14px;
-            font-size: 56px;
+            font-size: clamp(28px, 5.5vw, 56px);
             font-weight: 600;
             letter-spacing: -2px;
         }
 
         .email-icon {
-            font-size: 100px;
+            font-size: clamp(50px, 10vw, 100px);
             line-height: 1;
         }
 
         /* About Section */
         #about {
             justify-content: flex-start;
-            padding-top: 180px;
-            padding-left: 60px;
+            padding-top: clamp(120px, 18vh, 180px);
+            padding-left: clamp(20px, 5vw, 60px);
+            padding-right: clamp(20px, 5vw, 60px);
+            overflow-y: auto;
         }
 
         #about h1 {
-            font-size: 72px;
+            font-size: clamp(36px, 7vw, 72px);
             font-weight: 400;
-            margin-bottom: 80px;
+            margin-bottom: clamp(30px, 6vw, 80px);
         }
 
         #about p {
-            font-size: 20px;
+            font-size: clamp(16px, 2vw, 20px);
             line-height: 1.7;
             max-width: 1150px;
-            margin-bottom: 30px;
+            margin-bottom: clamp(20px, 3vw, 30px);
             font-weight: 300;
         }
 
         #about p:last-child {
-            margin-top: 50px;
+            margin-top: clamp(25px, 4vw, 50px);
+            margin-bottom: clamp(40px, 6vw, 60px);
+        }
+
+        /* Mobile-specific adjustments */
+        @media screen and (max-width: 768px) {
+            .nav-left {
+                flex-direction: column;
+                gap: 8px;
+                align-items: flex-start;
+            }
+
+            .nav-right {
+                gap: 15px;
+            }
+
+            #home {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #home h1 {
+                font-size: clamp(28px, 9vw, 40px);
+            }
+
+            .portfolio-list {
+                padding-right: 10px;
+            }
+
+            .github-link {
+                position: static;
+                display: block;
+                margin-bottom: 30px;
+                font-size: clamp(24px, 6vw, 32px);
+            }
+
+            #portfolio {
+                padding-right: 20px;
+            }
+
+            .orange-box {
+                bottom: 40px;
+                right: 20px;
+            }
+
+            .contact-inner {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            #about {
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            nav {
+                padding: 12px 15px;
+            }
+
+            .nav-left h1 {
+                font-size: 14px;
+            }
+
+            .nav-left p {
+                font-size: 11px;
+            }
+
+            .nav-right a {
+                font-size: 13px;
+            }
+
+            .orange-circle {
+                width: 35px;
+                height: 35px;
+                top: 12px;
+            }
+
+            #home h2 {
+                font-size: 14px;
+                margin-bottom: 25px;
+            }
+
+            #home h1 {
+                font-size: 26px;
+            }
+
+            .portfolio-list li {
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Landscape mobile orientation */
+        @media screen and (max-height: 500px) and (orientation: landscape) {
+            #home {
+                justify-content: flex-start;
+                padding-top: 100px;
+            }
+
+            #home h1 {
+                font-size: clamp(24px, 6vw, 36px);
+            }
+
+            #about {
+                padding-top: 100px;
+            }
+
+            #portfolio {
+                padding-top: 100px;
+            }
+
+            #contact {
+                padding-top: 100px;
+                padding-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -319,17 +440,14 @@
             
             isScrolling = true;
             
-            // Remove all classes
             sections.forEach(section => {
                 section.classList.remove('active', 'prev');
             });
             
-            // Mark previous section
             if (index > currentSection) {
                 sections[currentSection].classList.add('prev');
             }
             
-            // Activate new section
             sections[index].classList.add('active');
             currentSection = index;
             
@@ -344,19 +462,16 @@
             if (isScrolling) return;
             
             if (event.deltaY > 0) {
-                // Scroll down
                 if (currentSection < sections.length - 1) {
                     goToSection(currentSection + 1);
                 }
             } else {
-                // Scroll up
                 if (currentSection > 0) {
                     goToSection(currentSection - 1);
                 }
             }
         }
 
-        // Touch events for mobile
         function handleTouchStart(event) {
             touchStartY = event.touches[0].clientY;
         }
@@ -372,12 +487,10 @@
             
             if (Math.abs(swipeDistance) > 50) {
                 if (swipeDistance > 0) {
-                    // Swipe up - go to next section
                     if (currentSection < sections.length - 1) {
                         goToSection(currentSection + 1);
                     }
                 } else {
-                    // Swipe down - go to previous section
                     if (currentSection > 0) {
                         goToSection(currentSection - 1);
                     }
@@ -385,7 +498,6 @@
             }
         }
 
-        // Keyboard navigation
         function handleKeyboard(event) {
             if (event.key === 'ArrowDown') {
                 if (currentSection < sections.length - 1) {
@@ -404,7 +516,6 @@
         window.addEventListener('touchend', handleTouchEnd, { passive: true });
         window.addEventListener('keydown', handleKeyboard);
 
-        // Initialize
         sections[0].classList.add('active');
     </script>
 
